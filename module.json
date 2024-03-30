@@ -1,0 +1,35 @@
+{
+	"id": "ars-2e",
+	"title": "ARS for 2nd Edition",
+	"description": "Tweaks several aspects of the ARS system to support play in 2nd Edition.",
+	"authors": [
+		{
+			"name": "IHaveThatPower",
+			"flags": {}
+		}
+	],
+	"version": "0.0.1",
+	"compatibility": {
+		"minimum": "11"
+	},
+	"socket": false,
+	"esmodules": [
+		"modules/ars-2e.js",
+		"modules/ars-2e-actor.js",
+		"modules/ars-2e-inventory.js"
+	],
+	"styles": [
+		"styles/ars-2e.css"
+	],
+	"relationships": {
+		"requires": [
+			{
+				"id": "lib-wrapper",
+				"type": "module",
+				"compatibility": {
+					"verified": "1.12.12.0"
+				}
+			}
+		]
+	}
+}

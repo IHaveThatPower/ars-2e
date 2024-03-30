@@ -1,0 +1,151 @@
+* {
+	--ars-style-light: rgb(230, 229, 224);
+	--ars-style-dark: rgb(212, 212, 211);
+}
+
+.ars.sheet.actor.character .tab.main .ability-tables td {
+	border: 1px solid;
+	border-color: var(--ars-style-light);
+}
+.ars.sheet.actor.character .tab.main .ability-tables tr,
+.ars.sheet.actor.character .tab.main .ability-tables table table {
+	border: none;
+	background-color: var(--ars-style-light);
+}
+.ars.sheet.actor.character .tab.main .ability-tables tr:nth-of-type(even) {
+	background-color: var(--ars-style-dark);
+}
+.ars.sheet.actor.character .tab.main .ability-tables tbody + tr + td:first-child {
+	background-color: var(--ars-style-light);
+}
+.ars.sheet.actor.character .tab.main .ability-save-grid .save-box {
+}
+.ars.sheet.actor.character .tab.main .ability-save-grid .save-quadrant {
+	background-color: var(--ars-style-light);
+}
+.ars.sheet.actor.character .tab.main .ability-save-grid .save-quadrant:nth-of-type(4n),
+.ars.sheet.actor.character .tab.main .ability-save-grid .save-quadrant:nth-of-type(4n-1) {
+	background-color: var(--ars-style-dark);
+}
+.ars.sheet.actor.character .tab.main .ability-save-grid .save-quadrant input {
+	margin: 2px auto !important;
+	width: 40px;
+	max-width: 100%;
+	background-color: #fafafa;
+	border: 1px solid var(--ars-style-dark);
+	border-radius: 3px;
+	line-height: 1.9em;
+}
+.ars.sheet.actor.character .tab.main .ability-save-grid .save-quadrant .save-label {
+	margin-left: 0;
+	margin-right: 0;
+}
+.ars.sheet.actor.character .tab.main .ability-save-grid .flexcol.save {
+	padding-left:0;
+	padding-right:0;
+}
+.ars.sheet.actor.character .tab.main .ability-tables td input.percent,
+.ars.sheet.actor.character .tab.main .ability-tables .ability-score input {
+	background-color: #fafafa;
+	border: 1px solid var(--ars-style-dark);
+}
+.ars.sheet.actor.character .tab.main .ability-tables > table > tbody > tr > td:first-child {
+	background-color: var(--ars-style-light);
+}
+
+.ars.sheet.actor.character input[type="text"]:focus, 
+.ars.sheet.actor.character input[type="number"]:focus, 
+.ars.sheet.actor.character input[type="password"]:focus, 
+.ars.sheet.actor.character input[type="date"]:focus, 
+.ars.sheet.actor.character input[type="time"]:focus, 
+.ars.sheet.actor.character input[type="search"]:focus,
+select:focus {
+	box-shadow: 0 0 5px darkgray;
+}
+
+.ars.sheet.actor.character header.sheet-header input[name="name"] {
+	font-size: 2em;
+}
+
+.ars.sheet.actor.character header.sheet-header div.help-column {
+	flex: 0 0 1.5rem;
+	flex-wrap: nowrap;
+	overflow: hidden;
+	align-items: center;
+}
+
+/* Emulate tab.main values here */
+/*
+.ars.sheet.actor.character header.sheet-header {
+  text-align: left;
+  align-items: start;
+}
+.ars.sheet.actor.character header.sheet-header .flexcol {
+  padding: 1px;
+}
+.ars.sheet.actor.character header.sheet-header .flexrow {
+  padding: 1px;
+}
+.ars.sheet.actor.character header.sheet-header .resource {
+  flex-grow: 2;
+  border-bottom: 1px solid;
+}
+.ars.sheet.actor.character header.sheet-header .resource-input {
+  height: 18px;
+  border: none;
+  border-bottom: 1px solid;
+}
+.ars.sheet.actor.character header.sheet-header label {
+  font-size: 0.99em;
+  font-weight: 600;
+}
+.ars.sheet.actor.character header.sheet-header select {
+  height: 100%;
+}
+*/
+.ars.sheet.actor.character div.character-details {
+	height: 0;
+}
+.ars.sheet.actor.character div.flexrow.background-only {
+	display: none;
+}
+.ars.sheet.actor.character div.character-flavor div.flexcol div.flexrow.class-race>div,
+.ars.sheet.actor.character div.character-flavor div.flexcol div.flexrow.alignment-size>div { 
+	display: flex;
+	align-items: center;
+}
+.ars.sheet.actor.character div.character-flavor div.class-race div.resource+div,
+.ars.sheet.actor.character div.character-flavor div.alignment-size select[name="system.details.alignment"]+div {
+  padding-left: 1rem;
+}
+.ars.sheet.actor.character div.character-flavor div.flexcol div.flexrow.class-race>div>*:first-child,
+.ars.sheet.actor.character div.character-flavor div.flexcol div.flexrow.alignment-size>div>*:first-child {
+	min-width: 5rem;
+}
+.ars.sheet.actor.character div.character-flavor div.flexcol div.flexrow.class-race>div>*:last-child,
+.ars.sheet.actor.character div.character-flavor div.flexcol div.flexrow.alignment-size>div>*:last-child {
+	min-width: 8rem;
+}
+
+.ars.sheet.actor.character img.profile-img {
+	border: none;
+	height: unset;
+	width: 25%;
+	flex: unset;
+	/* float: right; */
+}
+/*
+.ars.sheet.actor.character div.ability-save-grid {
+	clear: both;
+}
+*/
+.ars.sheet.actor.character header.sheet-header a.content-link {
+	margin-left: auto;
+	border: none;
+}
+.ars.sheet.actor.character header.sheet-header a.content-link i {
+	margin-right: 0;
+}
+.ars.sheet.actor.character header.sheet-header a.content-link:hover {
+	text-shadow: 0 0 8px darkgray;
+}
